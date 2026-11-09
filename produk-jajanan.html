@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produk Jajanan | POTI JTI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@400;600;700&family=Nunito+Sans:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body data-page="produk">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <!-- Ikon menu & aksi (inline supaya tetap jalan saat file dibuka langsung dari folder) -->
+  <symbol id="i-dash" viewBox="0 0 20 22" fill="currentColor"><rect x="10.61" width="9.39" height="13.71" rx="1.5"/><rect x="10.61" y="15.09" width="9.39" height="6.91" rx="1.5"/><rect y=".11" width="9.39" height="6.91" rx="1.5"/><rect y="8.29" width="9.39" height="13.71" rx="1.5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.6"/><path d="M2.5 21v-.8a6 6 0 0 1 6-6h1a6 6 0 0 1 6 6v.8"/><path d="M15 4.6a3.6 3.6 0 0 1 0 6.8"/><path d="M18.4 14.6a6 6 0 0 1 3.1 5.6v.8"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24" fill="currentColor"><path d="M3.5 2.5h17A1.5 1.5 0 0 1 22 4v3a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 7V4a1.5 1.5 0 0 1 1.5-1.5z"/><path fill-rule="evenodd" d="M3.5 10h17v8.5a3 3 0 0 1-3 3h-11a3 3 0 0 1-3-3zM9.5 12.6a1 1 0 0 0 0 2h5a1 1 0 0 0 0-2z"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M9 2.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5V3h3a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3zM7.5 9a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 0-1.5zm0 3.5a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 0-1.5zm0 3.5a.75.75 0 0 0 0 1.5H12a.75.75 0 0 0 0-1.5z"/></symbol>
+  <symbol id="i-logout" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4H6a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h7"/><path d="M12 15h15M22 10l5 5-5 5"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/><path fill="currentColor" stroke-width="1.2" d="M19.5 2.5l2 2L12 14l-3 1 1-3z"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24" fill="currentColor"><path d="M9 3h6l1 1.5h4.5a.75.75 0 0 1 0 1.5h-17a.75.75 0 0 1 0-1.5H8z"/><path fill-rule="evenodd" d="M5.5 8h13l-.8 11.2A2 2 0 0 1 15.7 21H8.3a2 2 0 0 1-2-1.8zM9 10.5h1.2v7H9zm2.4 0h1.2v7h-1.2zm2.4 0H15v7h-1.2z"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.5 9.4a2.6 2.6 0 1 1 3.9 2.25c-.9.5-1.4 1.1-1.4 2.1"/><path d="M12 17.3h.01"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 2.5V7M16 2.5V7"/><path d="M8.3 14.2l2.6 2.6 4.8-5"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4.5"/><path d="M12 16.5v-8M8.8 11.5L12 8.3l3.2 3.2"/></symbol>
+  <symbol id="i-group" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="7" r="1.9"/><circle cx="12" cy="5.6" r="1.9"/><circle cx="18.5" cy="7" r="1.9"/><path d="M1.5 18.5c.3-3 2.1-5 4-5s3.7 2 4 5"/><path d="M7.7 19.5c.4-3.8 2.3-6.2 4.3-6.2s3.9 2.4 4.3 6.2"/><path d="M14 18.5c.3-3 2.1-5 4.5-5s4.2 2 4.5 5"/></symbol>
+</svg>
+
+<div class="app">
+  <aside class="sidebar" id="sidebar" aria-label="Menu utama">
+    <a class="brand" href="dashboard.html" aria-label="POTI JTI, ke Dashboard">
+      <span class="brand__logo" aria-hidden="true">P</span>
+      <span class="brand__name">POTI JTI</span>
+    </a>
+
+    <p class="nav-label">MAIN MENU</p>
+    <nav class="nav">
+      <a class="nav__link" href="dashboard.html">
+        <svg class="ic nav__icon" aria-hidden="true"><use href="#i-dash"/></svg>
+        <span>Dashboard</span>
+      </a>
+      <a class="nav__link" href="pengurus.html">
+        <svg class="ic nav__icon" aria-hidden="true"><use href="#i-users"/></svg>
+        <span>Pengurus</span>
+      </a>
+      <a class="nav__link is-active" aria-current="page" href="produk-jajanan.html">
+        <svg class="ic nav__icon" aria-hidden="true"><use href="#i-box"/></svg>
+        <span>Produk Jajanan</span>
+      </a>
+      <a class="nav__link" href="mitra-inventaris.html">
+        <svg class="ic nav__icon" aria-hidden="true"><use href="#i-clip"/></svg>
+        <span>Mitra Inventaris</span>
+      </a>
+    </nav>
+
+    <div class="user">
+      <span class="user__avatar" aria-hidden="true">PJ</span>
+      <div class="user__info">
+        <span class="user__name">Admin POTI</span>
+        <span class="user__role">Administrator</span>
+      </div>
+      <!-- ganti href ke halaman login / endpoint logout kamu -->
+      <a class="user__logout" href="login.html" aria-label="Keluar">
+        <svg class="ic" aria-hidden="true"><use href="#i-logout"/></svg>
+      </a>
+    </div>
+  </aside>
+  <div class="scrim" data-scrim></div>
+
+  <main class="main">
+    <button class="menu-toggle" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="Buka menu">
+      <svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg>
+    </button>
+
+    <header class="page-head reveal" style="--i:0">
+      <h1>Produk Jajanan</h1>
+      <p>Kelola data produk jajanan POTI</p>
+    </header>
+
+    <div class="toolbar reveal" style="--i:1">
+      <button class="btn btn--primary btn--wide" type="button" id="btnAdd">Tambah Data</button>
+      <input class="search" id="search" type="search" placeholder="Cari" aria-label="Cari produk jajanan" autocomplete="off">
+    </div>
+
+    <div class="table-card reveal" style="--i:2">
+      <table class="table table--produk">
+        <colgroup><col><col><col><col><col></colgroup>
+        <thead>
+          <tr>
+          <th scope="col">No</th>
+          <th scope="col">Nama Produk Jajanan</th>
+          <th scope="col">Kategori</th>
+          <th scope="col">Harga</th>
+          <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <!-- baris diisi oleh js/admin.js -->
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<script src="js/admin.js"></script>
+<script>
+  // Petunjuk kalau js/admin.js tidak termuat (biasanya karena folder js/ tidak ada di samping file HTML ini)
+  window.addEventListener('load', function () {
+    if (!window.__potiAdminLoaded) console.error('js/admin.js tidak termuat. Pastikan struktur folder: css/admin.css dan js/admin.js berada di samping file HTML.');
+  });
+</script>
+</body>
+</html>

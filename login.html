@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - POTI JTI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="login-page">
+    <section class="card">
+
+      <div class="brand">POTI JTI</div>
+
+      <h1 class="title">Login</h1>
+      <p class="subtitle">Silahkan login terlebih dahulu untuk memulai sesi</p>
+
+      <form id="loginForm" class="form" novalidate>
+
+        <!-- Username -->
+        <label class="label" for="username">Username</label>
+        <div class="input-wrap input-username">
+          <svg class="icon icon-user" viewBox="0 0 19 21" aria-hidden="true">
+            <circle cx="9.5" cy="4.6" r="3.8" fill="none" stroke="#B3B3B3" stroke-width="1.2"/>
+            <path d="M1 20v-2.4C1 15 3 13.4 5.4 13.4h8.2c2.4 0 4.4 1.6 4.4 4.2V20"
+                  fill="none" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          <input type="text" id="username" name="username"
+                 placeholder="Masukkan username anda" autocomplete="username">
+        </div>
+
+        <!-- Password -->
+        <label class="label label-password" for="password">Password</label>
+        <div class="input-wrap input-password">
+          <svg class="icon icon-key" viewBox="0 0 28 28" aria-hidden="true">
+            <circle cx="18.5" cy="9.5" r="7.5" fill="#B3B3B3"/>
+            <circle cx="20.5" cy="7.5" r="2.2" fill="#FFFFFF"/>
+            <path d="M13 14.5 3.5 24" stroke="#B3B3B3" stroke-width="3.2" stroke-linecap="round"/>
+            <path d="m7.5 20.5 3 3M4.8 23.2l2 2" stroke="#B3B3B3" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+          <input type="password" id="password" name="password"
+                 placeholder="Masukkan password anda" autocomplete="current-password">
+          <button type="button" id="togglePassword" class="toggle"
+                  aria-label="Tampilkan password" aria-pressed="false">
+            <svg viewBox="0 0 27 18" aria-hidden="true">
+              <path d="M1 9C4 4 8.5 1 13.5 1S23 4 26 9c-3 5-7.5 8-12.5 8S4 14 1 9z" fill="#777777"/>
+              <circle cx="13.5" cy="9" r="5.2" fill="#FFFFFF"/>
+              <circle cx="13.5" cy="9" r="3.3" fill="#777777"/>
+              <circle cx="14.6" cy="8" r="1.1" fill="#FFFFFF"/>
+              <line class="slash" x1="3" y1="16.5" x2="24" y2="1.5"
+                    stroke="#777777" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <p id="formError" class="form-error" role="alert" hidden></p>
+
+        <button type="submit" class="btn-login">Masuk</button>
+      </form>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
