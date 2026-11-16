@@ -14,7 +14,8 @@ body {
   display: flex;
   min-height: 100vh;
   width: 100%;
-  background: url("assets/img/IMG_20261027_092120.jpg.jpeg") center / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 55%, rgba(0, 0, 0, 0.65) 100%),
+    url("img/IMG_20261027_092120.jpg.jpeg") center/cover no-repeat;
 }
 
 /* Card / Frame 1 */
